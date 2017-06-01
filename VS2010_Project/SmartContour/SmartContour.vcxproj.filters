@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="imebra">
+      <UniqueIdentifier>{fedb13e7-420a-476b-bd53-91d67a7852f4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\SmartContour\ContourArray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SmartContour\CoordinateSystemHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SmartContour\IImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SmartContour\IMedicalImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SmartContour\InputFileNameArray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SmartContour\ISeriesViewer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SmartContour\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SmartContour\MyContour.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SmartContour\MyLiveWire.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SmartContour\NRRDFileManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SmartContour\RAWFromDICOM2MedicalImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SmartContour\RAWImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SmartContour\Series.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SmartContour\SeriesArray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SmartContour\SliceViewer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\base\src\baseObject.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\base\src\baseStream.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\buffer.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\base\src\charsetConversion.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\charsetsList.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\codec.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\codecFactory.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\colorTransform.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\colorTransformsFactory.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\base\src\criticalSection.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\data.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataGroup.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataHandler.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataHandlerDate.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataHandlerDateTime.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataHandlerDateTimeBase.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataHandlerString.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataHandlerStringAE.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataHandlerStringAS.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataHandlerStringCS.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataHandlerStringDS.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataHandlerStringIS.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataHandlerStringLO.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataHandlerStringLT.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataHandlerStringPN.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataHandlerStringSH.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataHandlerStringST.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataHandlerStringUI.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataHandlerStringUnicode.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataHandlerStringUT.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataHandlerTime.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataSet.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dibCodec.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dicomCodec.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dicomDict.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dicomDir.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\drawBitmap.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\base\src\exception.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\base\src\huffmanTable.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\image.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\jpegCodec.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\LUT.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\base\src\memory.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\base\src\memoryStream.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\modalityVOILUT.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\MONOCHROME1ToMONOCHROME2.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\MONOCHROME1ToRGB.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\MONOCHROME2ToRGB.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\MONOCHROME2ToYBRFULL.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\PALETTECOLORToRGB.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\RGBToMONOCHROME2.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\RGBToPALETTECOLOR.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\RGBToYBRFULL.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\RGBToYBRPARTIAL.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\base\src\stream.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\base\src\streamController.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\base\src\streamReader.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\base\src\streamWriter.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\base\src\thread.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\transaction.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\transform.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\transformBuffers.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\transformHighBit.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\transformsChain.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\viewHelper.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\VOILUT.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\waveform.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\YBRFULLToMONOCHROME2.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\YBRFULLToRGB.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\YBRPARTIALToRGB.cpp">
+      <Filter>imebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\shared\source\BoundingBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\shared\source\ErrorManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\shared\source\GageAdaptor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\shared\source\MyGLH.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\shared\source\PinholeCamera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\shared\source\Texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\includes\shared\source\VertexPool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\SmartContour\RAWFromDICOM2MedicalImage.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SmartContour\ContourArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SmartContour\CoordinateSystemHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SmartContour\IImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SmartContour\IMedicalImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SmartContour\InputFileNameArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SmartContour\ISeriesViewer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SmartContour\MyContour.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SmartContour\MyLiveWire.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SmartContour\NRRDFileManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SmartContour\RAWImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SmartContour\Series.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SmartContour\SeriesArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SmartContour\SliceViewer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

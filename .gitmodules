@@ -1,0 +1,3 @@
+[submodule "externals/Includes"]
+	path = externals/Includes
+	url = git://github.com/jggrandi/IncludesForHepatecProjects

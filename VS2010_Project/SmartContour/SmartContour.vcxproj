@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E2C6CC97-54AA-4193-8CDE-E3C64A8C5C70}</ProjectGuid>
+    <RootNamespace>SmartContour</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\includes\dirent;..\..\..\includes\Glew\include;..\..\..\includes\boost_1_34_0;..\..\..\includes\teem-1.8.0-win32\include;..\..\..\includes\glut;..\..\..\includes\AntTweakBar\include;..\..\..\includes;..\..\..\includes\shared\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level2</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glut32.lib;glu32.lib;glew32.lib;bz2.lib;png.lib;teem.lib;z.lib;AntTweakBar.lib;SharedLibs.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\includes\Glew\lib;..\..\..\includes\glut;..\..\..\includes\teem-1.8.0-win32\lib\shared;..\..\..\includes\AntTweakBar\lib;..\..\..\includes\glu;..\..\..\includes\shared\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\includes\dirent;..\..\..\includes\Glew\include;..\..\..\includes\boost_1_34_0;..\..\..\includes\teem-1.8.0-win32\include;..\..\..\includes\glut;..\..\..\includes\AntTweakBar\include;..\..\..\includes;..\..\..\includes\shared\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;GLUT_BUILDING_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level1</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>MinSpace</Optimization>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glut32.lib;glu32.lib;glew32.lib;bz2.lib;png.lib;teem.lib;z.lib;AntTweakBar.lib;SharedLibs.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\includes\Glew\lib;..\..\..\includes\glut;..\..\..\includes\teem-1.8.0-win32\lib\shared;..\..\..\includes\AntTweakBar\lib;..\..\..\includes\glu;..\..\..\includes\shared\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\includes\shared\source\BoundingBox.cpp" />
+    <ClCompile Include="..\..\..\includes\shared\source\ErrorManager.cpp" />
+    <ClCompile Include="..\..\..\includes\shared\source\GageAdaptor.cpp" />
+    <ClCompile Include="..\..\..\includes\shared\source\MyGLH.cpp" />
+    <ClCompile Include="..\..\..\includes\shared\source\PinholeCamera.cpp" />
+    <ClCompile Include="..\..\..\includes\shared\source\Texture.cpp" />
+    <ClCompile Include="..\..\..\includes\shared\source\VertexPool.cpp" />
+    <ClCompile Include="..\..\SmartContour\ContourArray.cpp" />
+    <ClCompile Include="..\..\SmartContour\CoordinateSystemHelper.cpp" />
+    <ClCompile Include="..\..\SmartContour\IImage.cpp" />
+    <ClCompile Include="..\..\SmartContour\IMedicalImage.cpp" />
+    <ClCompile Include="..\..\SmartContour\InputFileNameArray.cpp" />
+    <ClCompile Include="..\..\SmartContour\ISeriesViewer.cpp" />
+    <ClCompile Include="..\..\SmartContour\main.cpp" />
+    <ClCompile Include="..\..\SmartContour\MyContour.cpp" />
+    <ClCompile Include="..\..\SmartContour\MyLiveWire.cpp" />
+    <ClCompile Include="..\..\SmartContour\NRRDFileManager.cpp" />
+    <ClCompile Include="..\..\SmartContour\RAWFromDICOM2MedicalImage.cpp" />
+    <ClCompile Include="..\..\SmartContour\RAWImage.cpp" />
+    <ClCompile Include="..\..\SmartContour\Series.cpp" />
+    <ClCompile Include="..\..\SmartContour\SeriesArray.cpp" />
+    <ClCompile Include="..\..\SmartContour\SliceViewer.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\base\src\baseObject.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\base\src\baseStream.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\buffer.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\base\src\charsetConversion.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\charsetsList.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\codec.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\codecFactory.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\colorTransform.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\colorTransformsFactory.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\base\src\criticalSection.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\data.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataGroup.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataHandler.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataHandlerDate.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataHandlerDateTime.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataHandlerDateTimeBase.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataHandlerString.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataHandlerStringAE.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataHandlerStringAS.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataHandlerStringCS.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataHandlerStringDS.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataHandlerStringIS.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataHandlerStringLO.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataHandlerStringLT.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataHandlerStringPN.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataHandlerStringSH.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataHandlerStringST.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataHandlerStringUI.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataHandlerStringUnicode.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataHandlerStringUT.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataHandlerTime.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dataSet.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dibCodec.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dicomCodec.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dicomDict.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\dicomDir.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\drawBitmap.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\base\src\exception.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\base\src\huffmanTable.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\image.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\jpegCodec.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\LUT.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\base\src\memory.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\base\src\memoryStream.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\modalityVOILUT.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\MONOCHROME1ToMONOCHROME2.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\MONOCHROME1ToRGB.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\MONOCHROME2ToRGB.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\MONOCHROME2ToYBRFULL.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\PALETTECOLORToRGB.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\RGBToMONOCHROME2.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\RGBToPALETTECOLOR.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\RGBToYBRFULL.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\RGBToYBRPARTIAL.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\base\src\stream.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\base\src\streamController.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\base\src\streamReader.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\base\src\streamWriter.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\base\src\thread.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\transaction.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\transform.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\transformBuffers.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\transformHighBit.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\transformsChain.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\viewHelper.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\VOILUT.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\waveform.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\YBRFULLToMONOCHROME2.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\YBRFULLToRGB.cpp" />
+    <ClCompile Include="..\..\..\includes\imebra\imebra\src\YBRPARTIALToRGB.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\SmartContour\RAWFromDICOM2MedicalImage.h" />
+    <ClInclude Include="..\..\SmartContour\ContourArray.h" />
+    <ClInclude Include="..\..\SmartContour\CoordinateSystemHelper.h" />
+    <ClInclude Include="..\..\SmartContour\IImage.h" />
+    <ClInclude Include="..\..\SmartContour\IMedicalImage.h" />
+    <ClInclude Include="..\..\SmartContour\InputFileNameArray.h" />
+    <ClInclude Include="..\..\SmartContour\ISeriesViewer.h" />
+    <ClInclude Include="..\..\SmartContour\MyContour.h" />
+    <ClInclude Include="..\..\SmartContour\MyLiveWire.h" />
+    <ClInclude Include="..\..\SmartContour\NRRDFileManager.h" />
+    <ClInclude Include="..\..\SmartContour\RAWImage.h" />
+    <ClInclude Include="..\..\SmartContour\Series.h" />
+    <ClInclude Include="..\..\SmartContour\SeriesArray.h" />
+    <ClInclude Include="..\..\SmartContour\SliceViewer.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
